@@ -1,5 +1,4 @@
 require 'forwardable'
-require 'rubygems'
 require 'activesupport'
 
 dir = File.expand_path(File.dirname(__FILE__))
