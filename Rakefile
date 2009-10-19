@@ -8,6 +8,7 @@ begin
     gem.authors = ['Jay Fields', 'John Nunemaker']
     gem.files = FileList['lib/**/*.rb', '[A-Z]*', 'test/**/*'].to_a
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.add_dependency 'activesupport', '>= 3.0.pre'
   end
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
