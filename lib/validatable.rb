@@ -1,24 +1,22 @@
 require 'forwardable'
 require 'activesupport'
 
-dir = File.expand_path(File.dirname(__FILE__))
-
-require File.join(dir, 'object_extension')
-require File.join(dir, 'errors')
-require File.join(dir, 'validatable_class_methods')
-require File.join(dir, 'macros')
-require File.join(dir, 'validatable_instance_methods')
-require File.join(dir, 'included_validation')
-require File.join(dir, 'child_validation')
-require File.join(dir, 'understandable')
-require File.join(dir, 'requireable')
-require File.join(dir, 'validations/validation_base')
-require File.join(dir, 'validations/validates_format_of')
-require File.join(dir, 'validations/validates_presence_of')
-require File.join(dir, 'validations/validates_acceptance_of')
-require File.join(dir, 'validations/validates_confirmation_of')
-require File.join(dir, 'validations/validates_length_of')
-require File.join(dir, 'validations/validates_true_for')
-require File.join(dir, 'validations/validates_numericality_of')
-require File.join(dir, 'validations/validates_each')
-require File.join(dir, 'validations/validates_associated')
+require 'validatable/object_extension'
+require 'validatable/errors'
+require 'validatable/validatable_class_methods'
+require 'validatable/macros'
+require 'validatable/validatable_instance_methods'
+require 'validatable/included_validation'
+require 'validatable/child_validation'
+require 'validatable/understandable'
+require 'validatable/requireable'
+require 'validatable/validations/validation_base'
+require 'validatable/validations/validates_format_of'
+require 'validatable/validations/validates_presence_of'
+require 'validatable/validations/validates_acceptance_of'
+require 'validatable/validations/validates_confirmation_of'
+require 'validatable/validations/validates_length_of'
+require 'validatable/validations/validates_true_for'
+require 'validatable/validations/validates_numericality_of'
+require 'validatable/validations/validates_each'
+require 'validatable/validations/validates_associated'
