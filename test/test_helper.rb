@@ -5,7 +5,7 @@ require 'dust'
 require 'set'
 require 'expectations'
 
-require File.dirname(__FILE__) + '/../lib/validatable'
+require 'validatable'
 
 class << Test::Unit::TestCase
   def expect(expected_value, &block)
