@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../test_helper')
 functional_tests do
 
   expect "can't be empty" do
-    child_class = Module.new do
+    child_class = Class.new do
       include Validatable
       validates_presence_of :name
     end
@@ -21,7 +21,7 @@ functional_tests do
   end
   
   expect "can't be empty" do
-    child_class = Module.new do
+    child_class = Class.new do
       include Validatable
       validates_presence_of :name
     end
