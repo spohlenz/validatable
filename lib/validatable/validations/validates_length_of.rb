@@ -1,3 +1,5 @@
+require 'active_support/core_ext/object/blank'
+
 module Validatable
   class ValidatesLengthOf < ValidationBase #:nodoc:
     option :minimum, :maximum, :is, :within

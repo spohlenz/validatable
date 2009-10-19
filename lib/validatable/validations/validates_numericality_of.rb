@@ -1,3 +1,5 @@
+require 'active_support/core_ext/object/blank'
+
 module Validatable 
   class ValidatesNumericalityOf < ValidationBase #:nodoc:
     option :only_integer
