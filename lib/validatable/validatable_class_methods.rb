@@ -1,5 +1,8 @@
 module Validatable
   module ClassMethods #:nodoc:
+    def validate(*args, &block); set_callback(:validate, *args, &block); end
+    def validate_on_update(*args, &block); set_callback(:validate_on_update, *args, &block); end
+    def validate_on_create(*args, &block); set_callback(:validate_on_create, *args, &block); end
     
     def validate_children(instance, group)
       self.children_to_validate.each do |child_validation|
