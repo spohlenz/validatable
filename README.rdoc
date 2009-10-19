@@ -97,8 +97,8 @@ Validatable also exposes an after_validate hook method.
 	
 	class ValidatesPresenceOf
 	  after_validate do |result, instance, attribute|
-			instance.errors.add("#{attribute} can't be blank") unless result
-		end
+	    instance.errors.add("#{attribute} can't be blank") unless result
+	  end
 	end
 
 	person = Person.new
